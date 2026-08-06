@@ -181,3 +181,4 @@ the baseline is deliberately pinned to a known-good line solver. See
 Not yet chosen. Decide before sharing beyond immediate collaborators, and note that
 the PAWL dependency above is fetched rather than redistributed precisely so this
 repository's licence does not have to speak for it.
+# Partial_Wasserstein_on_Circles
