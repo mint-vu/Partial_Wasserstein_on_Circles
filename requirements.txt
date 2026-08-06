@@ -1,0 +1,20 @@
+# PAWC dependencies — install ONLY inside the `pawc` conda env:
+#     conda run -n pawc pip install -r requirements.txt
+# Resolved 2026-08-04 on python 3.11.15 (conda-forge).
+
+numpy==2.4.6
+scipy==1.17.1
+pot==0.9.7.post1
+
+# Test tooling
+pytest==9.1.1
+hypothesis==6.165.0
+
+# Figures / benchmarks
+matplotlib==3.11.1
+
+# Required by the vendored PAWL reference implementation (vendor/partial.py):
+#   numba -> the @njit kernels; kneed -> imported at module scope for
+#   partial_ot_1d_elbow. See vendor/PROVENANCE.md.
+numba==0.66.0
+kneed==0.8.6

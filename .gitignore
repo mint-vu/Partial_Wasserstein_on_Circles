@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# numba on-disk JIT cache
+__pycache__/*.nbi
+__pycache__/*.nbc
+
+# The PAWL reference implementation is fetched, not redistributed: upstream
+# carries no licence file. See vendor/PROVENANCE.md and vendor/fetch_pawl.py.
+vendor/partial.py

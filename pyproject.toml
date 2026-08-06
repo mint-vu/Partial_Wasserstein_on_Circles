@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pawc"
+version = "0.1.0.dev0"
+description = "PAWC: exact partial 1-Wasserstein on the circle, O(N log N)"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["pawc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = [
+    # numba emits deprecation chatter from the vendored PAWL kernels; the vendored
+    # file is not ours to modify (see vendor/PROVENANCE.md).
+    "ignore::DeprecationWarning:numba",
+]
+markers = [
+    "slow: long-running gate tests (full Phase-1 battery, large-N checks)",
+]
