@@ -38,6 +38,18 @@ python vendor/fetch_pawl.py     # downloads at a pinned commit, verifies SHA-256
 
 PAWC itself does not need it.
 
+## Tutorial
+
+**[`tutorial.ipynb`](tutorial.ipynb) is the place to start.**  It renders on GitHub with
+all output, so you can read it without running anything: the problem, the profile and its
+convexity, plans and nested active sets, the simultaneous cut, choosing `k` by the elbow,
+a side-by-side showing why partial beats balanced under clutter, and the spherical
+extension.  Ten minutes end to end.
+
+```bash
+jupyter lab tutorial.ipynb      # or just read it on GitHub
+```
+
 ## Quickstart
 
 ```python
@@ -65,6 +77,9 @@ circular `W₁` cost (up to POT's normalisation — `demos/demo1_walkthrough.py`
 this against `ot.lp.wasserstein_circle`).
 
 ## Demos
+
+The notebook covers the same ground more gently; these two go further, and are scripts
+rather than cells so they are easy to point at a bigger problem.
 
 ### 1. Applying PAWC, and watching the matching grow
 
@@ -133,6 +148,7 @@ pawc/               the package
   elbow.py            choosing k by the elbow of the profile
   verify.py           independent recomputation helpers used by the tests
   sspw.py             sliced spherical partial Wasserstein on S^{d-1}
+tutorial.ipynb      the tutorial, with output committed so it reads on GitHub
 demos/              the two demos above
 tests/              94 tests
 vendor/             PAWL provenance + fetch script (the file itself is not vendored)
