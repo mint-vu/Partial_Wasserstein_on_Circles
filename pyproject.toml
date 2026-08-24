@@ -7,6 +7,9 @@ name = "pawc"
 version = "0.1.0.dev0"
 description = "PAWC: exact partial 1-Wasserstein on the circle, O(N log N)"
 requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Soheil Kolouri" }]
 
 [tool.setuptools]
 packages = ["pawc"]

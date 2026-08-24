@@ -194,6 +194,9 @@ the baseline is deliberately pinned to a known-good line solver. See
 
 ## Licence
 
-Not yet chosen. Decide before sharing beyond immediate collaborators, and note that
-the PAWL dependency above is fetched rather than redistributed precisely so this
-repository's licence does not have to speak for it.
+MIT — see [`LICENSE`](LICENSE).
+
+The PAWL reference implementation the baselines call is *not* covered by it: that code
+is fetched at a pinned commit rather than redistributed here, precisely so this
+repository's licence does not have to speak for a repository that carries none of its
+own. See [Vendored PAWL](#vendored-pawl).
